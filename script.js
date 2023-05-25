@@ -2,7 +2,7 @@ function check() {
     var ano = new Date().getFullYear()
     var fano = document.querySelector('input#txtyear')
     var res = document.querySelector('div#res')
-    if (fano.value.length == 0 || fano.value > ano) {
+    if (fano.value.length == 0 || fano.value > ano || fano.value < 1900) {
         window.alert('Verifique os dados inseridos e tente novamente!')
     } else {
         var fsex = document.getElementsByName('radsex')
